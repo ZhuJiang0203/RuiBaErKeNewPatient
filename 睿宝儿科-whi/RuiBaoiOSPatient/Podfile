@@ -1,0 +1,26 @@
+use_frameworks!
+target “RuiBaoiOSPatient” do
+    
+platform :ios, '8.0'
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MJRefresh'
+pod 'IQKeyboardManager'
+#pod 'SnapKit'
+pod 'SVProgressHUD'
+pod 'MBProgressHUD'
+#pod 'EaseMobSDKFull'
+#pod 'UMengSocialCOM'
+#pod 'UMengSocial'
+#pod 'Hyphenate_CN'
+
+end
+
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['ENABLE_BITCODE'] = 'NO'
+        end
+    end
+end
