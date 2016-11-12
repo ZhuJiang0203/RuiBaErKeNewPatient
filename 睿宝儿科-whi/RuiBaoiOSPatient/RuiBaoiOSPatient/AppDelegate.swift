@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         
+//        let vv = uivi
+//        casdcsdac
+//        dfas
+        
         // 确定中英文环境
         ChangeLanguage.shareChangeLanguage().toChangeLanguage()
 
